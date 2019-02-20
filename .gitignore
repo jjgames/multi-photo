@@ -1,1 +1,4 @@
 ffmpeg/
+*.jpg
+*.png
+*.gif
