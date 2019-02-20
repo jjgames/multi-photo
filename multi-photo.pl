@@ -2,7 +2,6 @@ use warnings;
 use strict;
 
 use Image::Thumbnail;
-use DBI;
 use FindBin;
 
 # take photos
@@ -43,8 +42,7 @@ sub resize_images {
         $id =~ s(\.(jpg|JPG|png|PNG)$)();
 
         # write the file to a temporary location
-        my $tmp_loc  = $id . '.JPG';
-        my $main_loc = 'finished/' . $id . '.JPG'; # photo of front
+        my $location  = $id . '.JPG';
 
         # Resize image and write it to the appropriate location
         my $t = new Image::Thumbnail(
@@ -53,15 +51,10 @@ sub resize_images {
             size       => 1980,       # maximum dimension
             create     => 1,
             density    => "72x72",    # resolution of photo
-            inputpath  => $tmp_loc,
-            outputpath => $main_loc
+            inputpath  => $location,
+            outputpath => $location
         );
     }
-
-	# delete original images
-	foreach my $file (@files) {
-		unlink($file);
-	}
 
 	return
 }
