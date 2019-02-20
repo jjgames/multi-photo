@@ -2,3 +2,6 @@ ffmpeg/
 *.jpg
 *.png
 *.gif
+finished/Thumbs.db
+upload-images.bat
+multi-photo-with-upload.pl
