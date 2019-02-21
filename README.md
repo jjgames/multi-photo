@@ -1,4 +1,4 @@
-# JJGames Multiple Product Photo Tool
+# Multiple Product Photo Tool
 
 Tool to take multiple high resolution product photos at the same time and automatically resize them.
 
