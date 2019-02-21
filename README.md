@@ -1,6 +1,6 @@
 # JJGames Multiple Product Photo Tool
 
-Tool to take multiple product photos at the same time and resize them.
+Tool to take multiple high resolution product photos at the same time and automatically resize them.
 
 [JJGames.com](https://www.jjgames.com/) uses a modified version of this to take product photos
 from different angles for thousands of video games every day.
