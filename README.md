@@ -3,7 +3,7 @@
 Tool to take multiple product photos at the same time and resize them.
 
 [JJGames.com](https://www.jjgames.com/) uses a modified version of this to take product photos
-of thousands of used video games every day.
+from different angles for thousands of video games every day.
 
 ## Setup
 
@@ -28,10 +28,14 @@ cpanm install Image::Thumbnail
 
 * Edit program for number of cameras
 
-Change the line in the multi-photo.pl file that chooses the number of cameras you'll use.
+Change the line in the `multi-photo.pl` file that chooses the number of cameras you'll use.
 
 ```
 my @photos_to_take = (1,2,3);
+```
+
+```
+my @photos_to_take = (1,2,3,4,5);
 ```
 
 * Edit .bat files
@@ -46,7 +50,7 @@ In command prompt type:
 ffmpeg -list_devices true -f dshow -i dummy
 ```
 
-This lists all of the cameras attached to your computer.  You'll copy the unique identifier
+This lists all of the cameras attached to your computer.  You'll copy the "Alternative Name"
 for a camera and paste that into one .bat file at this line.
 
 ```perl
@@ -70,11 +74,13 @@ unique between .bat files.
 -vframes 1 "%~dp0\2.jpg"
 ```
 
+Repeat for each camera in your setup.
+
 ## Take Photos
 
-To take photos, double click the `multi-photo.pl` program.
+Setup the cameras where you want.
 
-Or open the command prompt and run the perl program:
+Double click the `multi-photo.pl` program.  Or open command prompt and run the perl program:
 
 ```
 perl multi-photo.pl
@@ -82,3 +88,9 @@ perl multi-photo.pl
 
 One photo will be taken and resized for each camera setup.  You should see the photos
 in the folder containing the `multi-photo.pl` program.
+
+##  See Example Camera Setup
+
+IMG OF PHOTO BOX
+
+See a photo box setup with multiple cameras and an example video of the tool in action
