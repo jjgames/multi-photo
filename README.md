@@ -2,8 +2,6 @@
 
 Tool to take multiple high resolution product photos at the same time and automatically resize them.
 
-[JJGames.com](https://www.jjgames.com/) uses a modified version of this to take product photos
-from different angles for thousands of video games every day.
 
 ## Setup
 
@@ -94,3 +92,7 @@ in the folder containing the `multi-photo.pl` program.
 IMG OF PHOTO BOX
 
 See a photo box setup with multiple cameras and an example video of the tool in action
+
+## Supported by
+
+Development of this open source software was supported by [PriceCharting.com](https://www.pricecharting.com)
